@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <AVFoundation/AVFoundation.h>
 @interface ZZ_SpeechController : NSObject
 
+@property(strong,nonatomic,readonly) AVSpeechSynthesizer * synthesizer;
+
+///类方法 开辟空间
++(instancetype)speechController;
+///开始播放文本
+-(void)beginConversation;
+
 @end
+

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ZZ_SpeechController.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+///播放
+- (IBAction)ClickOnThePlayAction:(UIButton *)sender {
+    [[ZZ_SpeechController speechController] beginConversation];
 }
 
 

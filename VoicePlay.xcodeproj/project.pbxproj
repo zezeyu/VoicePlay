@@ -15,6 +15,7 @@
 		E19FFC78208C8A7200090BFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E19FFC77208C8A7200090BFA /* main.m */; };
 		E19FFC82208C8A7200090BFA /* VoicePlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19FFC81208C8A7200090BFA /* VoicePlayTests.m */; };
 		E19FFC8D208C8A7200090BFA /* VoicePlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19FFC8C208C8A7200090BFA /* VoicePlayUITests.m */; };
+		E19FFC9C208C8AB000090BFA /* ZZ_SpeechController.m in Sources */ = {isa = PBXBuildFile; fileRef = E19FFC9B208C8AB000090BFA /* ZZ_SpeechController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E19FFC88208C8A7200090BFA /* VoicePlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoicePlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19FFC8C208C8A7200090BFA /* VoicePlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoicePlayUITests.m; sourceTree = "<group>"; };
 		E19FFC8E208C8A7200090BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19FFC9A208C8AB000090BFA /* ZZ_SpeechController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZ_SpeechController.h; sourceTree = "<group>"; };
+		E19FFC9B208C8AB000090BFA /* ZZ_SpeechController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZ_SpeechController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				E19FFC69208C8A7200090BFA /* AppDelegate.m */,
 				E19FFC6B208C8A7200090BFA /* ViewController.h */,
 				E19FFC6C208C8A7200090BFA /* ViewController.m */,
+				E19FFC9A208C8AB000090BFA /* ZZ_SpeechController.h */,
+				E19FFC9B208C8AB000090BFA /* ZZ_SpeechController.m */,
 				E19FFC6E208C8A7200090BFA /* Main.storyboard */,
 				E19FFC71208C8A7200090BFA /* Assets.xcassets */,
 				E19FFC73208C8A7200090BFA /* LaunchScreen.storyboard */,
@@ -268,6 +273,7 @@
 				E19FFC6D208C8A7200090BFA /* ViewController.m in Sources */,
 				E19FFC78208C8A7200090BFA /* main.m in Sources */,
 				E19FFC6A208C8A7200090BFA /* AppDelegate.m in Sources */,
+				E19FFC9C208C8AB000090BFA /* ZZ_SpeechController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B3539P8YN;
 				INFOPLIST_FILE = VoicePlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheanda.carmonitorv1.VoicePlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B3539P8YN;
 				INFOPLIST_FILE = VoicePlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheanda.carmonitorv1.VoicePlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
