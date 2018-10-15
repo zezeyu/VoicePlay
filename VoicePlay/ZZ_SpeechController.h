@@ -15,7 +15,7 @@
 ///类方法 开辟空间
 +(instancetype)speechController;
 ///开始播放文本
--(void)beginConversation;
+-(void)beginConversation:(NSString *)speech;
 
 @end
 

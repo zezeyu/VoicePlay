@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRl-lR-R8N">
-                                <rect key="frame" x="115" y="281.5" width="144" height="104"/>
+                                <rect key="frame" x="115.5" y="281.5" width="144" height="104"/>
                                 <color key="backgroundColor" red="0.97936779259999995" green="0.77725666760000001" blue="0.1981110871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="00b-WJ-JJx"/>
@@ -33,13 +33,28 @@
                                     <action selector="ClickOnThePlayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UG1-5z-YRE"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="[鄂AW03SQ蓝色]请司机朋友遵守交通规则,开车时请系好安全带，不抽烟，不超速,不超载,不接打电话，不疲劳驾驶,车安达祝您一路顺风！" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-L7-BJd">
+                                <rect key="frame" x="7" y="38" width="360" height="197"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="ZaH-YF-MxB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ihA-L7-BJd" firstAttribute="top" secondItem="eHj-3O-CLy" secondAttribute="bottom" constant="18" id="Fbi-xa-Hvw"/>
                             <constraint firstItem="fRl-lR-R8N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Su4-ya-sCw"/>
-                            <constraint firstItem="fRl-lR-R8N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bHn-gE-glR"/>
+                            <constraint firstItem="fRl-lR-R8N" firstAttribute="top" secondItem="ihA-L7-BJd" secondAttribute="bottom" constant="46.5" id="WlJ-le-RnC"/>
+                            <constraint firstAttribute="trailing" secondItem="ihA-L7-BJd" secondAttribute="trailing" constant="8" id="cBu-iH-5kn"/>
+                            <constraint firstItem="ihA-L7-BJd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="7" id="pEs-AA-iil"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="speechTextView" destination="ihA-L7-BJd" id="r8M-xF-Dcw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ZZ_SpeechController.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *speechTextView;
 
 @end
 
